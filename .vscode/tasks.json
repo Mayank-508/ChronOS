@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build scheduler",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "main.cpp",
+          "fcfs.cpp",
+          "sjf.cpp",
+          "sjf_preemptive.cpp",
+          "round_robin.cpp",
+          "priority.cpp",
+          "priority_preemptive.cpp",
+          "utils.cpp",
+          "-o",
+          "output/scheduler.exe"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "echo": true,
+          "focus": true,
+          "showReuseMessage": false,
+          "clear": true
+        }
+      }
+    ]
+  }
+  
